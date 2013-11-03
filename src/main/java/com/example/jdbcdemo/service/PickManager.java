@@ -96,7 +96,7 @@ public class PickManager {
 
 			while (rs.next()) {
 				Pick p = new Pick();
-				p.setId(rs.getLong("id"));
+				p.setId(rs.getInt("id"));
 				p.setCompany(rs.getString("company"));
 				p.setName(rs.getString("name"));
 				p.setMilimeters(rs.getDouble("milimeters"));
@@ -157,7 +157,7 @@ public class PickManager {
 			
 			ResultSet rs = selectIDStmt.executeQuery();
 			
-			test.setId(rs.getLong("id"));
+			test.setId(rs.getInt("id"));
 			test.setCompany(rs.getString("company"));
 			test.setName(rs.getString("name"));
 			test.setMilimeters(rs.getDouble("milimeters"));

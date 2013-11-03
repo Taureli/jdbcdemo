@@ -1,26 +1,25 @@
 package com.example.jdbcdemo.domain;
 
-public class Order {
+public class Zamowienie {
 	
-	private long id;
+	private int id;
 	
 	private String customer;
-	private long idPick;
+	private int idPick;
 	private int amount;
 	
-	public Order() {
+	public Zamowienie() {
 	}
 	
-	public Order(String customer, long idPick, int amount) {
+	public Zamowienie(String customer, int amount) {
 		super();
 		this.customer = customer;
-		this.idPick = idPick;
 		this.amount = amount;
 	}
-	public long getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getCustomer() {
@@ -29,10 +28,10 @@ public class Order {
 	public void setCustomer(String customer) {
 		this.customer = customer;
 	}
-	public long getIdPick() {
+	public int getIdPick() {
 		return idPick;
 	}
-	public void setIdPick(long idPick) {
+	public void setIdPick(int idPick) {
 		this.idPick = idPick;
 	}
 	public int getAmount() {
